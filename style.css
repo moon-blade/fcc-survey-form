@@ -1,0 +1,114 @@
+/* GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background: url(https://images.pexels.com/photos/1440476/pexels-photo-1440476.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+}
+/* header */
+.header {
+  color: #002d39;
+  margin: 20px auto;
+  width: 50%;
+  text-align: center;
+}
+/* main */
+main {
+  background: rgba(73, 65, 109, 0.95);
+  color: whitesmoke;
+  border-radius: 15px;
+  margin: 20px auto;
+  width: 50%;
+}
+.form-div {
+  margin: 20px auto;
+}
+/* form */
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#optional-text {
+  font-size: 1.5rem;
+}
+/* name email age */
+#name-label,
+#email-label,
+#number-label,
+#dropdown-label,
+#radio-paragraph,
+#checkbox-paragraph,
+#textarea-paragraph {
+  width: 100%;
+  text-decoration: underline;
+  font-size: 2.6rem;
+  margin: 5px;
+}
+#name,
+#email,
+#number,
+#dropdown {
+  font-size: 1.7rem;
+  padding: 5px;
+  margin: 5px;
+  border: 3px solid black;
+  border-radius: 7.5px;
+}
+#radio-buttons,
+#checkboxes-div
+/* #textarea-div */ {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.7rem;
+  margin: 5px;
+  border: 3px solid black;
+  border-radius: 7.5px;
+}
+
+#extra-early-label,
+#early-label,
+#later-early-label,
+#tea-label,
+#omlette-label,
+#oatmeal-label {
+  font-size: 1.7rem;
+  margin: 5px;
+}
+#your-day {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  margin: 5px;
+  resize: vertical;
+}
+#submit {
+  display: block;
+  width: 100%;
+  margin: 20px auto;
+  padding: 0.75rem;
+  background: hsl(300, 25%, 25%);
+  color: whitesmoke;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 7.5px;
+  border: 3px solid black;
+}
+#submit:hover {
+  background: hsl(300, 75%, 25%);
+}
