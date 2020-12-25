@@ -22,6 +22,9 @@ body {
   margin: 20px auto;
   width: 50%;
   text-align: center;
+  background: rgba(73, 65, 109, 0.95);
+  color: whitesmoke;
+  border-radius: 15px;
 }
 /* main */
 main {
@@ -111,4 +114,35 @@ main {
 }
 #submit:hover {
   background: hsl(300, 75%, 25%);
+}
+@media screen and (max-width: 840px) {
+  main,
+  .header {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #name-label,
+  #email-label,
+  #number-label,
+  #dropdown-label,
+  #radio-paragraph,
+  #checkbox-paragraph,
+  #textarea-paragraph {
+    font-size: 1.8rem;
+  }
+  #name,
+  #email,
+  #number,
+  #dropdown {
+    font-size: 1.3rem;
+  }
+  #extra-early-label,
+  #early-label,
+  #later-early-label,
+  #tea-label,
+  #omlette-label,
+  #oatmeal-label {
+    font-size: 1.3rem;
+  }
 }
