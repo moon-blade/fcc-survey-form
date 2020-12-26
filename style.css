@@ -10,8 +10,9 @@ html {
   font-size: 10px;
 }
 body {
-  background: url(https://images.pexels.com/photos/1440476/pexels-photo-1440476.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background: url(./img/sakura_background.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
