@@ -7,36 +7,25 @@
   box-sizing: border-box;
 }
 html {
+  font-family: "Open Sans", sans-serif;
   font-size: 10px;
 }
 body {
-  background: url(./img/sakura_background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
+  color: whitesmoke;
+  background: hsl(330, 55%, 27%);
 }
 /* header */
 .header {
-  color: #002d39;
-  margin: 20px auto;
-  width: 50%;
+  margin: 20px 0;
   text-align: center;
-  background: rgba(73, 65, 109, 0.95);
-  color: whitesmoke;
-  border-radius: 15px;
 }
 /* main */
 main {
-  background: rgba(73, 65, 109, 0.95);
-  color: whitesmoke;
-  border-radius: 15px;
+  background: hsl(333, 47%, 37%);
+  border-radius: 5px;
   margin: 20px auto;
   width: 50%;
-}
-.form-div {
-  margin: 20px auto;
 }
 /* form */
 #survey-form {
@@ -44,106 +33,67 @@ main {
   flex-direction: column;
   width: 80%;
   margin: 20px auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 #optional-text {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
-/* name email age */
-#name-label,
-#email-label,
-#number-label,
-#dropdown-label,
-#radio-paragraph,
-#checkbox-paragraph,
-#textarea-paragraph {
+.form-label {
   width: 100%;
   text-decoration: underline;
   font-size: 2.6rem;
   margin: 5px;
 }
-#name,
-#email,
-#number,
-#dropdown {
-  font-size: 1.7rem;
+.form-input {
+  font-size: 2.1rem;
   padding: 5px;
   margin: 5px;
   border: 3px solid black;
-  border-radius: 7.5px;
+  border-radius: 5px;
 }
 #radio-buttons,
-#checkboxes-div
-/* #textarea-div */ {
+#checkboxes-div {
   display: flex;
   flex-direction: column;
-  font-size: 1.7rem;
   margin: 5px;
+  padding: 5px;
   border: 3px solid black;
-  border-radius: 7.5px;
+  border-radius: 5px;
 }
 
-#extra-early-label,
-#early-label,
-#later-early-label,
-#tea-label,
-#omlette-label,
-#oatmeal-label {
-  font-size: 1.7rem;
+.radio-checkbox {
+  font-size: 2.1rem;
   margin: 5px;
 }
 #your-day {
   min-height: 120px;
   width: 100%;
-  padding: 0.625rem;
+  padding: 7.5px;
   margin: 5px;
   resize: vertical;
+  font-size: 2.1rem;
 }
 #submit {
   display: block;
   width: 100%;
   margin: 20px auto;
-  padding: 0.75rem;
-  background: hsl(300, 25%, 25%);
-  color: whitesmoke;
-  border-radius: 2px;
+  padding: 5px;
+  background: hsl(333, 47%, 37%);
+  border-radius: 5px;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 3.2rem;
   border-radius: 7.5px;
   border: 3px solid black;
 }
 #submit:hover {
   background: hsl(300, 75%, 25%);
 }
-@media screen and (max-width: 840px) {
-  main,
-  .header {
-    width: 90%;
+@media screen and (max-width: 855px) {
+  main {
+    width: 75%;
   }
 }
-@media screen and (max-width: 500px) {
-  #name-label,
-  #email-label,
-  #number-label,
-  #dropdown-label,
-  #radio-paragraph,
-  #checkbox-paragraph,
-  #textarea-paragraph {
-    font-size: 1.8rem;
-  }
-  #name,
-  #email,
-  #number,
-  #dropdown {
-    font-size: 1.3rem;
-  }
-  #extra-early-label,
-  #early-label,
-  #later-early-label,
-  #tea-label,
-  #omlette-label,
-  #oatmeal-label {
-    font-size: 1.3rem;
+@media screen and (max-width: 580px) {
+  main {
+    width: 90%;
   }
 }

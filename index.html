@@ -7,115 +7,125 @@
     <title>moonblade's Survey Form</title>
   </head>
   <body>
-    <!-- HEADER -->
-    <header>
+    <main>
+      <!-- header -->
       <div class="header">
         <h1 id="title">moonblade's Survey Form</h1>
         <p id="description">The chillest form ever</p>
       </div>
-    </header>
-    <main>
-      <!-- FORM -->
-      <div class="form-div">
-        <form id="survey-form">
-          <!-- NAME / EMAIL / AGE -->
-          <label id="name-label" for="name">Name</label>
-          <input type="text" id="name" placeholder="Enter your name" required />
-          <label id="email-label" for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            placeholder="Enter your email"
-            required
-          />
-          <label id="number-label" for="number"
-            >Age <span id="optional-text">(optional)</span></label
+      <!-- form -->
+      <form id="survey-form">
+        <!-- name -->
+        <label class="form-label" id="name-label" for="name">Name</label>
+        <input
+          class="form-input"
+          type="text"
+          id="name"
+          placeholder="Enter your name"
+          required
+        />
+        <!-- email -->
+        <label class="form-label" id="email-label" for="email">Email</label>
+        <input
+          class="form-input"
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+        <!-- age -->
+        <label class="form-label" id="number-label" for="number"
+          >Age <span id="optional-text">(optional)</span></label
+        >
+        <input
+          class="form-input"
+          type="number"
+          id="number"
+          min="1"
+          max="21"
+          placeholder="Enter your age"
+        />
+        <!-- dropdown -->
+        <label class="form-label" id="dropdown-label" for="dropdown"
+          >How are you feeling today?</label
+        >
+        <select class="form-input" id="dropdown">
+          <option value="excited">Excited</option>
+          <option value="shy">Shy</option>
+          <option value="satisfied">Satisfied</option>
+        </select>
+        <!-- radio -->
+        <p class="form-label" id="radio-paragraph">
+          When did you wake up today?
+        </p>
+        <div id="radio-buttons">
+          <label class="radio-checkbox" id="extra-early-label" for="extra-early"
+            ><input
+              type="radio"
+              id="extra-early"
+              name="wake"
+              value="extra-early"
+            />
+            Extra early</label
           >
-          <input
-            type="number"
-            id="number"
-            min="1"
-            max="21"
-            placeholder="Enter your age"
-          />
-          <!-- DROPDOWN -->
-          <label id="dropdown-label" for="dropdown"
-            >How are you feeling today?</label
+          <label class="radio-checkbox" id="early-label" for="early"
+            ><input type="radio" id="early" name="wake" value="early" />
+            Early</label
           >
-          <select id="dropdown">
-            <option value="excited">Excited</option>
-            <option value="shy">Shy</option>
-            <option value="satisfied">Satisfied</option>
-          </select>
-          <!-- RADIO -->
-          <p id="radio-paragraph">When did you wake up today?</p>
-          <div id="radio-buttons">
-            <label id="extra-early-label" for="extra-early"
-              ><input
-                type="radio"
-                id="extra-early"
-                name="wake"
-                value="extra-early"
-              />
-              Extra early</label
-            >
-            <label id="early-label" for="early"
-              ><input type="radio" id="early" name="wake" value="early" />
-              Early</label
-            >
-            <label id="later-early-label" for="later-early"
-              ><input
-                type="radio"
-                id="later-early"
-                name="wake"
-                value="later-early"
-              />
-              A little later than early</label
-            >
-          </div>
+          <label class="radio-checkbox" id="later-early-label" for="later-early"
+            ><input
+              type="radio"
+              id="later-early"
+              name="wake"
+              value="later-early"
+            />
+            A little later than early</label
+          >
+        </div>
 
-          <!-- CHECKBOXES -->
-          <p id="checkbox-paragraph">What did you have for breakfast today?</p>
-          <div id="checkboxes-div">
-            <label id="tea-label" for="tea"
-              ><input type="checkbox" id="tea" name="breakfast" value="tea" />
-              Tea</label
-            >
-            <label id="omlette-label" for="omlette"
-              ><input
-                type="checkbox"
-                id="omlette"
-                name="breakfast"
-                value="omlette"
-              />
-              Omlette</label
-            >
-            <label id="oatmeal-label" for="oatmeal"
-              ><input
-                type="checkbox"
-                id="oatmeal"
-                name="breakfast"
-                value="oatmeal"
-              />
-              Oatmeal</label
-            >
-          </div>
+        <!-- checkboxes -->
+        <p class="form-label" id="checkbox-paragraph">
+          What did you have for breakfast today?
+        </p>
+        <div id="checkboxes-div">
+          <label class="radio-checkbox" id="tea-label" for="tea"
+            ><input type="checkbox" id="tea" name="breakfast" value="tea" />
+            Tea</label
+          >
+          <label class="radio-checkbox" id="omlette-label" for="omlette"
+            ><input
+              type="checkbox"
+              id="omlette"
+              name="breakfast"
+              value="omlette"
+            />
+            Omlette</label
+          >
+          <label class="radio-checkbox" id="oatmeal-label" for="oatmeal"
+            ><input
+              type="checkbox"
+              id="oatmeal"
+              name="breakfast"
+              value="oatmeal"
+            />
+            Oatmeal</label
+          >
+        </div>
 
-          <!-- TEXTAREA -->
-          <p id="textarea-paragraph">How was your day?</p>
-          <div id="textarea-div">
-            <textarea
-              id="your-day"
-              cols="30"
-              rows="10"
-              placeholder="Enter here..."
-            ></textarea>
-          </div>
+        <!-- textarea -->
+        <p class="form-label" id="textarea-paragraph">How was your day?</p>
+        <div id="textarea-div">
+          <textarea
+            id="your-day"
+            cols="30"
+            rows="10"
+            placeholder="Tell me how it was :)"
+          ></textarea>
+        </div>
 
-          <!-- BUTTON -->
-          <button id="submit">Submit</button>
-        </form>
-      </div>
+        <!-- button -->
+        <button id="submit">Submit</button>
+      </form>
     </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
